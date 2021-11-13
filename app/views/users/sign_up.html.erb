@@ -1,0 +1,5 @@
+<h1>Sign Up Here</h1>
+  <%= form_with(model: @user, local: true, url: sign_up_path) do |form| %>
+    <%= form.text_field :first_name %>
+    <%= form.submit %>
+  <% end %>
