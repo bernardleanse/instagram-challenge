@@ -1,5 +1,32 @@
 <h1>Sign Up Here</h1>
   <%= form_with(model: @user, local: true, url: sign_up_path) do |form| %>
-    <%= form.text_field :first_name %>
+    <div>
+      <div>
+        <%= form.label :first_name, "First Name"  %>
+      </div>
+      <%= form.text_field :first_name %>
+    </div>
+
+    <div>
+      <div>
+        <%= form.label :last_name, "Last Name"  %>
+      </div>
+      <%= form.text_field :last_name %>
+    </div>
+
+    <div>
+      <div>
+        <%= form.label :email, "Email"  %>
+      </div>
+      <%= form.text_field :email %>
+    </div>
+
+    <div>
+      <div>
+        <%= form.label :password_digest, "Password"  %>
+      </div>
+      <%= form.password_field :password_digest %>
+    </div>
+    
     <%= form.submit %>
   <% end %>
