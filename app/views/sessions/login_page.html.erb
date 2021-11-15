@@ -1,0 +1,19 @@
+<h1>Log In Here</h1>
+  <%= form_with(local: true, url: authenticate_path) do |form| %>
+  
+    <div>
+      <div>
+        <%= form.label :email, "Email"  %>
+      </div>
+      <%= form.text_field :email %>
+    </div>
+
+    <div>
+      <div>
+        <%= form.label :password, "Password"  %>
+      </div>
+      <%= form.password_field :password %>
+    </div>
+    
+    <%= form.submit %>
+  <% end %>

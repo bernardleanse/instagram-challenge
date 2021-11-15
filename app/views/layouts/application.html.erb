@@ -24,9 +24,14 @@
   <div class="topnav">
     <a class="leftnav active" href="#home">Home</a>
     <a class="rightnav" href="/sign-up">Sign Up</a>
+    <a class="rightnav" href="/log-in">Log In</a>
 
   </div>
-
+  <% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+  <% end %>
 
     <main role="main" class="container">
 
